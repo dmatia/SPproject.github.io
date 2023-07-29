@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Massive-Retaliation;
+    src: url(/fonts/Massive-Retaliation.otf);
+}
+
+.nav-menu {
+    width: 100vw;
+    padding-right: 1em;
+    position: fixed;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.nav-menu a {
+    font-family: Massive-Retaliation;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-list :first-child:hover {
+    color: #0066ff;
+}
+
+.menu-list :nth-child(2):hover {
+    color: #008e02;
+}
+
+.menu-list :nth-child(3):hover {
+    color: #8d4700;
+}
+
+.menu-list :nth-child(4):hover {
+    color: #ff008c;
+}
+
+.menu-list :nth-child(5):hover {
+    color: #dcb700;
+}
