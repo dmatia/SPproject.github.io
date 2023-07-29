@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP PROJECT</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4eb81cd0f2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+    <video src="video/11.mp4" autoplay="true" muted="true" loop="true"></video>
+    <div class="main-container col">
+
+        <div class="main-header d-flex justify-content-between p-2">
+            <p class="legend-top">BELIEVE THE MYTHOLOGY</p>
+            <i onclick="toggleMenu()" id="menu" class="fa-solid fa-ellipsis fa-beat" style="color: #ffffff;" title="menu"></i>
+        </div>
+
+        <div class="col main-content d-flex align-items-center">
+            <img class="main-title mx-auto d-block" src="img/logo/spp.png">
+            <div id="main-menu">
+                <div class="main-menu mx-auto d-block align-self-auto hide-menu">
+                    <a class="row" href="#">home</a>
+                    <a class="row" href="#">the path</a>
+                    <a class="row" href="#">the lyricism</a>
+                    <a class="row" href="#">the videos</a>
+                    <a class="row" href="#">the tour</a>
+                    <a class="row close-menu" onclick="toggleMenu()" href="#">[hide menu]</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="main-footer d-flex justify-content-between p-2">
+            <div class="col-3"></div>
+            <div class="col-3 legend-bottom disclaimer" title="This is not an official Lorde website. This is fanmade collective memory for the solar power album.">disclaimer</div>
+            <div class="col-3 legend-bottom">REJECT THE MYTHOLOGY</div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
