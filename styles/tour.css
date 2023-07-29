@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ELEPHNT.ttf';
+    src: url(/fonts/ELEPHNT.TTF);
+}
+
+
+
+html{
+    font-size: 10px;
+}
+
+.tour-container{
+   height: 100vh;
+   width: auto;
+    overflow: auto;  
+    scroll-snap-type: y mandatory;  
+  }
+
+.tour-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.tour-container::-webkit-scrollbar:vertical {
+    width:0px;
+}
+  .snap-section {
+    scroll-snap-align: center;
+    min-height: 100vh;
+    transition: margin-right 10s;
+  }
+
+
+.section-01{
+    background-image: url(/img/tour/tour01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+
+
+
+.section-01 img{
+    max-width: 60em;
+    justify-self: center;
+    align-self: center;
+}
+
+.section-02{
+    background-image: url(/img/tour/tour02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'ELEPHNT.ttf';
+    color: #fff;
+    font-size: 6em;
+}
+
+.section-02 .p1{
+    margin-left: 1em;
+}
+.section-02 .p2{
+    margin-left: 2em;
+}
+.section-02 .p3{
+    margin-left: 3em;
+}
+.section-02 .p4{
+    margin-left: 4em;
+}
+.section-02 .p5{
+    margin-left: 4.5em;
+    font-size: 10rem;
+}
+.section-02 .p6{
+    margin-top: 1em;
+    margin-left: 40vw;
+}
+
+.section-02 p::selection{
+    background-color: #E0B140;
+}
+
+.section-03{
+    background-image: url(/img/tour/tour04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "america oceania europe";
+}
+
+.section-03 .datetitle{
+    font-family: 'ELEPHNT.ttf';
+    align-self: end;
+    margin: auto auto 0 auto;
+}
+
+.america{
+    grid-area: america;
+    justify-self: end;
+    margin-right: 3em;
+}
+.america p{
+    font-family: 'ELEPHNT.ttf';
+    font-size: 6em;
+    margin-left: -.4em;
+}
+.america pre{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+.oceania{
+    grid-area: oceania;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 6em;
+}
+
+.oceania p{
+    font-family: 'ELEPHNT.ttf';
+    font-size: 6em;
+    margin-left: -.4em;
+}
+.oceania pre{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.europe{
+    grid-area: europe;
+    justify-self: start;
+}
+.europe p{
+    font-family: 'ELEPHNT.ttf';
+    font-size: 6em;
+    margin-left: -.4em;
+}
+.europe pre{
+    color: #fff;
+    font-size: 1.2em;
+}

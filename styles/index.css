@@ -14,20 +14,20 @@ body{
 
 @font-face {
     font-family: BebasNeue-Regular;
-    src: url(BebasNeue-Regular.ttf);
+    src: url(/fonts/BebasNeue-Regular.ttf)
   }
 
 @font-face {
     font-family: Botaky;
-    src: url(botaky-black.ttf);
+    src: url(/fonts/botaky-black.ttf);
 }
 @font-face {
     font-family: Massive-Retaliation;
-    src: url(Massive-Retaliation.otf);
+    src: url(/fonts/Massive-Retaliation.otf);
 }
 @font-face {
     font-family: EngGoth;
-    src: url(EngGoth.ttf);
+    src: url(/fonts/EngGoth.ttf);
 }
 
 video {
@@ -54,7 +54,7 @@ video {
 }
 .disclaimer{
     transform: rotate(0deg);
-    padding-top: 1.8em;
+    padding-top: 1.5em;
     text-align: center;
     opacity: 1;
     cursor: pointer;
