@@ -56,7 +56,6 @@ html {
 /* END SECTION 1*/
 
 /* START SECTION 2*/
-/* background */
 .section-02 {
     background-image: url(/img/tour/tour02.jpg);
     background-position: center;
@@ -64,7 +63,6 @@ html {
     background-size: cover;
 }
 
-/* fonts */
 .section-02 {
     color: #fff;
     font-family: 'ELEPHNT.ttf';
@@ -98,8 +96,6 @@ html {
 
 /* END SECTION 2*/
 
-
-
 /* SECTION 3*/
 .section-03 {
     background-image: url(/img/tour/tour04.jpg);
@@ -122,3 +118,82 @@ html {
 }
 
 /* END SECTION 3 */
+
+/* SECTION 4 */
+.section-04 {
+    background-image: url(/img/tour/tour08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-04 div{
+    color: #fff;
+    font-family: 'ELEPHNT.ttf';
+    font-size: 15vw;
+    text-align: right;
+}
+/* END SECTION 4 */
+
+
+/* SECTION 5 */
+.section-05 {
+    background-image: url(/img/tour/tour06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-05 div{
+    padding-top: 50vh;
+    color: #fff;
+    font-family: 'ELEPHNT.ttf';
+    font-size: 20vw;
+    text-align: center;
+}
+/* END SECTION 5 */
+
+/* SECTION 6 */
+.section-06 {
+    background-image: url(/img/tour/tour07.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E0B140;
+}
+.section-06 div{
+    color: #fff;
+    font-family: 'ELEPHNT.ttf';
+    font-size: 10vw;
+}
+/* END SECTION 6 */
+
+/* SECTION 7 */
+.section-07 {
+    background-image: url(/img/tour/tour03.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E0B140;
+}
+.section-07 div{
+    color: #fff;
+    font-family: 'ELEPHNT.ttf';
+    font-size: 10vw;
+    padding-top: 60vh;
+    padding-left: 50vw;
+}
+/* END SECTION 7 */
+
+/* SECTION 8 */
+.section-08 {
+    background-image: url(/img/tour/tour05.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E0B140;
+}
+.section-08 div{
+    color: #fff;
+    font-family: 'ELEPHNT.ttf';
+    font-size: 10vw;
+}
+/* END SECTION 8 */
