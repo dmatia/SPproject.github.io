@@ -1,6 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #E0B140;
+}
+
+html {
+    font-size: 10px;
+}
+
 @font-face {
     font-family: Massive-Retaliation;
     src: url(/fonts/Massive-Retaliation.otf);
+}
+
+@font-face {
+    font-family: 'ELEPHNT.ttf';
+    src: url(/fonts/ELEPHNT.TTF);
 }
 
 .nav-menu {

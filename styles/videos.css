@@ -1,0 +1,158 @@
+.videos-section-1{
+    background: #009CE5;
+    height: 100vh;
+   
+}
+
+#videos-section-1-landing{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.videos-section-1 div img{
+max-width: 95%;
+transition: 1s;
+}
+.videos-section-1 div img:hover{
+    max-width: 100%;
+    }
+
+.videos-section-1 .col{
+    height: 100vh;
+    color: #fff;
+    font-size: 3em;
+}
+
+.videos-section-1 .col .row {
+    display: block;
+    text-align: center ;
+    
+}
+
+.videos-section-1 .col .row p{
+    font-family: 'Massive-Retaliation';
+  
+}
+.videos-section-1 .col .row p:hover{
+    cursor: pointer;
+    animation: rainbow-color 1s infinite;
+}
+@keyframes rainbow-color {
+    0% {
+        background-image: linear-gradient(to left,  indigo, blue, green, yellow, orange, red, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+    20% {
+        background-image: linear-gradient(to left, blue, green, yellow, orange, red, violet,  indigo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+    40%{
+        background-image: linear-gradient(to left, green, yellow, orange, red, violet,  indigo, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+    60%{
+        background-image: linear-gradient(to left, yellow, orange, red, violet,  indigo, blue, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+    80%{
+        background-image: linear-gradient(to left, orange, red, violet,  indigo, blue, green, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+    100%{
+        background-image: linear-gradient(to left, red, violet,  indigo, blue, green, yellow, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+
+}
+
+.videos-section-1 .col .fa-arrow-down{
+    font-size: 4em;
+    display: block;
+    text-align: center;
+}
+
+.videos-section-1 .img-1, .videos-section-1 .img-2{
+    max-height: 100vh;
+    position: sticky;
+}
+.videos-section-1 .img-2{
+    transform: rotate(180deg);
+}
+
+.videos-section-2{
+height: 100vh;
+overflow: hidden;
+}
+
+.videos-section-2 .sec02-title{
+    background-color: #e57e00;
+    font-family: 'Massive-Retaliation';
+    color: #fff !important;
+    height: 10vh;
+    font-size: 3.5em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    padding-left: 1em;
+}
+
+.videos-section-2 .sec02-body{
+    height: 90vh;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(max-content);
+    grid-template-areas: "1 2 3"
+                        "4 5 6"
+                        "7 8 9";
+}
+
+
+.sec02-body div{
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+.sec02-body div a, .sec02-body div a .play{
+    background-color: none;
+    background-image: none !important;
+    color: #242424;
+}
+.sec02-body div a .play:hover{
+    color: #aaa;
+}
+
+.sec02-body :first-child{
+    background-image: url(/img/video-thumbs/01-solar-power-thumb.jpg);
+}
+.sec02-body :nth-child(2){
+    background-image: url(/img/video-thumbs/02-mood-ring-thumb.jpg);
+}
+.sec02-body :nth-child(3){
+    background-image: url(/img/video-thumbs/03-fallen-fruit-thumb.jpg);
+}
+.sec02-body :nth-child(4){
+    background-image: url(/img/video-thumbs/04-leader-thumb.jpg);
+}
+.sec02-body :nth-child(5){
+    background-image: url(/img/video-thumbs/05-secrets-of-thumb.jpg);
+}
+.sec02-body :nth-child(6){
+    background-image: url(/img/video-thumbs/06-the-path-thumb.jpg);
+}
+.sec02-body :nth-child(8){
+    background-image: url(/img/video-thumbs/07-oceanic-feeling-thumb.jpg);
+}
