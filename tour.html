@@ -13,25 +13,22 @@
     <link rel="stylesheet" href="styles/general-styles.css">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/tour.css">
-
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
     <div class="col tour-container">
 
-        <div class="row nav-menu d-flex justify-content-end align-items-lg-center">
-
-            <div class="menu-list">
-                <a href="index.html">home</a>
-                <a href="#">the path</a>
-                <a href="#">the lyricism</a>
-                <a href="#">the videos</a>
-                <a class="pr-5" href="tour.html">the tour</a>
-            </div>
-
-            <i class="fa-solid fa-ellipsis fa-beat" style="color: #ffffff;" title="menu"></i>
+        <div id="nav-placeholder">
 
         </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
 
         <!-- SECTION 1 -->
         <div class="snap-section section-01 row justify-content-center">
@@ -178,7 +175,7 @@
         </div>
         <!-- END SECTION 8 -->
     </div>
-
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>

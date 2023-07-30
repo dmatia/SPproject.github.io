@@ -4,6 +4,7 @@
 }
 
 .nav-menu {
+    z-index: 10;
     width: 100vw;
     padding-right: 1em;
     position: fixed;
@@ -35,4 +36,12 @@
 
 .menu-list :nth-child(5):hover {
     color: #dcb700;
+}
+
+#nav-menu-container{
+    height: 50px;
+}
+
+#nav-menu{
+    display: none;
 }

@@ -9,3 +9,13 @@ function toggleMenu() {
         mainMenu.style.display = "none";
     }
  }
+
+ function toggleNavMenu() {
+    var mainMenu = document.getElementById('nav-menu');
+    if(mainMenu.style.display === "none"){
+        mainMenu.style.display = "block";
+    }
+    else{
+        mainMenu.style.display = "none";
+    }
+ }
