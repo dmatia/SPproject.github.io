@@ -1,0 +1,24 @@
+body{
+   background-image: url(/img/deco/background.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.lyrics-sidebar{
+    width: 30vw;
+    height: 100vh;
+    background-image: url(/img/sp-photoshoots/tumblr_0157f9e7a47d6dc14755fe2a8f29e3c2_0c080aba_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    color: #fff;
+    font-size: 2.8em;
+    padding: .5em;
+}
+
+.lyrics-body{
+    display: block;
+    position:fixed;
+    margin-left: 30vw;
+    width: 70vw;
+}
