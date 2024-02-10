@@ -10,9 +10,25 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-     <video src="video/11.mp4" autoplay="true" muted="true" loop="true"></video>
-    <div class="contenedor">
+    <video src="video/11.mp4" autoplay="true" muted="true" loop="true"></video>
 
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">the path</a></li>
+            <li><a href="#">the lyrics</a></li>
+            <li><a href="#">the solar power tour</a></li>
+            <li><a href="#">the critic acclaim</a></li>
+            <li><a href="#">about us</a></li>
+        </ul>
+        <i class="fa-regular fa-circle-xmark fa-2xl" style="color: #ffffff; padding: 15px; cursor: pointer;" title="Close" onclick="closeMenu()"></i>
+        <p>dont't you think the early 2000s seem so far away...?</p>
+    </div>
+
+
+    <div class="contenedor" id="contenedor">
+        
     <header>
         <p>believe the mythology</p>
     </header>
@@ -23,7 +39,7 @@
             <img src="img/logo/spp.png" title="THE SOLAR POWER PROJECT">
         </div>
 
-        <aside class="menu"><i onclick="openMenu()" class="fa-solid fa-ellipsis-vertical fa-beat"></i></aside>
+        <aside class="menu" style="cursor: pointer;" title="Menu"><i onclick="openMenu()" class="fa-solid fa-ellipsis-vertical fa-beat"></i></aside>
 
     <footer>
         <p>reject the mythology</p>
