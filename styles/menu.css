@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+
+
+#menu{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr .5fr;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    margin-left: -100%;
+    position: absolute;
+    transition: .5s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#menu img{
+    max-width: 300px;
+    margin: 10px auto;
+    transition: .5s;
+}
+
+#menu img:hover{
+    -webkit-filter: drop-shadow(1px 1px 5px #aaa);
+  filter: drop-shadow(1px 1px 5px #aaa);
+}
+
+#menu a{
+    font-family: 'Faster One', system-ui;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #ffe;
+    font-size: 2.5em;
+    transition: .5s;
+}
+#menu a:hover{
+    font-size: 2.8em;
+    text-shadow: 1px 1px 6px #ccc;
+}
+#menu a:active{
+    margin-left: 3em;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+.closeMenu{
+    width: 100%;
+}
+.closeMenu:hover{
+    color: red;
+}
+
+#menu p{
+    font-style: italic;
+    text-align: center;
+    font-size: .8em;
+    color: rgba(256, 256, 256, .5);
+}
+
+
