@@ -157,3 +157,15 @@ aside.disclaimer{
 
 
 }
+
+.center{
+    display: grid;
+    place-items: center;
+}
+#circle span{
+    position: absolute;
+    height: 300px;
+    font-size: 1em;
+    text-align: center;
+    transform-origin: bottom center;
+}
