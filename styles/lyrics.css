@@ -1,0 +1,66 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/deco/SPproject\ copy.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contenedor{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 4fr 50px;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "tracklist_title lyrics menu"
+                         "tracklist lyrics menu";
+}
+
+.tracklist_title{
+    color: #fff;
+    background-image: url(../img/logo/spp.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 90%;
+    grid-area: tracklist_title;
+    transition: .5s;
+}
+
+.tracklist_title:hover{
+    background-size: 95%;
+    -webkit-filter: drop-shadow(1px 1px 6px #ccc);
+    filter: drop-shadow(1px 1px 6px #ccc);
+}
+
+.tracklist_list{
+    grid-area: tracklist;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    margin: 10px 0 0 20%;
+    font-size: 1.3em;
+}
+
+.tracklist_list ol li:hover{
+    cursor: pointer;
+    color: #FFA800;
+}
+
+.lyrics{
+    grid-area: lyrics;
+    background-image: url(../img/deco/flowers.png);
+    background-repeat: repeat-y;
+    background-position: top left;
+}
+
+.menu{
+    grid-area: menu;
+    border: 2px solid aqua;
+}
