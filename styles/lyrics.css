@@ -19,23 +19,23 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 4fr 50px;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% 66% 10%;
     grid-template-areas: "tracklist_title lyrics menu"
-                         "tracklist lyrics menu";
+                         "tracklist lyrics menu"
+                         "spotify spotify spotify";
 }
 
 .tracklist_title{
     color: #fff;
     background-image: url(../img/logo/spp.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 90%;
+    background-position: right bottom;
+    background-size: 80%;
     grid-area: tracklist_title;
-    transition: .5s;
+    transition: .5s ease-in-out;
 }
 
 .tracklist_title:hover{
-    background-size: 95%;
     -webkit-filter: drop-shadow(1px 1px 6px #ccc);
     filter: drop-shadow(1px 1px 6px #ccc);
 }
@@ -43,21 +43,33 @@ body{
 .tracklist_list{
     grid-area: tracklist;
     color: #fff;
+    font-family: "puffin-display-soft", sans-serif;
+font-weight: 900;
+font-style: normal;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
+
     margin: 10px 0 0 20%;
+    overflow: scroll;
+    text-align: right;
     font-size: 1.3em;
+
 }
 
 .tracklist_list ol li:hover{
     cursor: pointer;
 }
 
-.song_selected{
-    color: #FFA800;
-} 
+.tracklist_list::-webkit-scrollbar{
+    width: 10px;
+    display: none;
+}
 
+.song_selected{
+    text-shadow: -2px 2px 10px #ccc, .5px .5px #5a5a5a, -.5px -.5px #686565;
+    transition: .3s;
+    padding: 0px 20px 0px 0;
+    color: rgb(255, 188, 179);
+} 
 
 .lyrics{
     grid-area: lyrics;
@@ -65,11 +77,27 @@ body{
     background-repeat: repeat-y;
     background-position: top left;
     overflow: auto;
+    padding-left: 5vw;
 }
+
+.lyrics span {
+    letter-spacing: 5px;
+    color: white;
+    background:#ca411e;
+    word-spacing: 1em;
+    line-break:looses;
+    line-height: 1.8em;
+    }
+
+.lyrics span::selection{
+    text-shadow: -2px 2px 3px #ccc;
+    background-color: #FFA800;
+}
+
 
 .lyrics::-webkit-scrollbar{
     width: 10px;
-    background: rgba(0,0,0,0);
+    display: none;
 }
 .menu{
     grid-area: menu;
@@ -81,7 +109,21 @@ body{
 
 #song_lyric{
     color: #fff;
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin-left: 10%;
+    font-family: "puffin-display-soft", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+#spotify{
+    grid-area: spotify;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* MOBILE PHONE */
+@media (max-width: 480px) {
+
+
 }

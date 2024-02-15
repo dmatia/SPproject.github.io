@@ -2,6 +2,8 @@ console.log('cargue');
 
 function loadLyrics(){
     loadLyric("the path");
+    changeSpotify("the path");
+    songPalette("the_path");
     const lis = document.querySelectorAll('#tracklist li');
     lis[0].classList.add('song_selected');
 }
@@ -15,6 +17,8 @@ tracklist.addEventListener('click', function(event) {
         event.target.classList.add('song_selected');
         const song = event.target.innerText;
         loadLyric(song);
+        changeSpotify(song);
+        songPalette(song);
         console.log("hice click en un li");
     }
 });
@@ -24,7 +28,6 @@ function loadLyric(song) {
     switch (song.toLowerCase()) {
         case `the path`:
             lyric = the_path;
-            console.log("switch the path");
             break;
         case 'solar power':
             lyric = solar_power;
@@ -70,6 +73,112 @@ function loadLyric(song) {
     songLyric.innerText = lyric;
 }
 
+function songPalette(song){
+    console.log("SONG PALETTE");
+    let backgroundColor = '';
+    let fontColor = '';
+    switch (song.toLowerCase()) {
+        case 'the path':
+        case 'fallen fruit': 
+        case 'the man with the axe':
+        case 'hold no grudge':
+            backgroundColor = "#fffcec";
+            fontColor = '#5B5476';
+            break;
+        case 'solar power':
+        case 'helen of troy':
+            backgroundColor = '#7BAEC6';
+            fontColor = '#FFF6D1';
+            break;
+        case 'california': 
+        case 'leader of a new regime': 
+        case 'dominoes':
+            backgroundColor = '#D6C3E9';
+            fontColor = '#680663';
+            break;
+        case 'stoned at the nail salon':
+        case 'mood ring':
+            backgroundColor = '#E5E9C3';
+            fontColor = '#369572';
+            break;
+        case 'secrets from a girl (who’s seen it all)':
+        case 'oceanic feeling':
+            backgroundColor = '#AD719B';
+            fontColor = '#BFE2E3';
+            break;
+        case 'big star':
+            backgroundColor = '#E9C8DF';
+            fontColor = '#4C3456';
+            break;
+    }
+    document.getElementById('song_lyric').style = `background-color: ${backgroundColor}; color: ${fontColor}`;
+}
+
+function changeSpotify(song){
+    let divSpotify = document.getElementById("spotify");
+    let src = '';
+    switch (song.toLowerCase()) {
+        case `the path`:
+            src = "https://open.spotify.com/embed/track/7JqqIi2ktnsNkYdQhKSCrz?utm_source=generator";
+            break;
+        case 'solar power':
+            src="https://open.spotify.com/embed/track/7s2kWabRM60W9I61HpKg8C?utm_source=generator"
+            break;
+        case 'california':
+            src="https://open.spotify.com/embed/track/4TYPnvjBbEfcDkk1UxpvYB?utm_source=generator"
+            break;
+        case 'stoned at the nail salon':
+            src="https://open.spotify.com/embed/track/4ybZVtJKFoF9w7R1O5WooS?utm_source=generator"
+            break;
+        case 'fallen fruit':
+            src="https://open.spotify.com/embed/track/5iUnomffoLeQsdlY2k5TDU?utm_source=generator"
+            break;
+        case 'secrets from a girl (who’s seen it all)':
+            src="https://open.spotify.com/embed/track/1toRu029yjgrleWg2w3gNU?utm_source=generator"
+            break;
+        case 'the man with the axe':
+            src="https://open.spotify.com/embed/track/2mP9lPo7pv9k2HTVutEisM?utm_source=generator"
+            break;
+        case 'dominoes':
+            src="https://open.spotify.com/embed/track/78Sn3YMeqUgJBoe6zt940Z?utm_source=generator"
+            break;
+        case 'big star':
+            src="https://open.spotify.com/embed/track/2qWVIatUtl2xMCHEvn4j7j?utm_source=generator"
+            break;
+        case 'leader of a new regime':
+            src="https://open.spotify.com/embed/track/6vLf0MjsXzrr3WIOWK9N9j?utm_source=generator"
+            break;
+        case 'mood ring':
+            src="https://open.spotify.com/embed/track/7rb4dcBfW0m1LQQcDCh4Hv?utm_source=generator"
+            break;
+        case 'oceanic feeling':
+            src="https://open.spotify.com/embed/track/6kj8TeHSns33wt1Z1wdmMx?utm_source=generator"
+            break;
+        case 'helen of troy':
+            src="https://open.spotify.com/embed/track/5luI0qmsWNYRRTJCWn8rcb?utm_source=generator"
+            break;
+        case 'hold no grudge':
+            src="https://open.spotify.com/embed/track/188rKyWMsC4WsKKZ85lnUO?utm_source=generator"
+            break;
+    }
+    divSpotify.innerHTML = `
+    <iframe style="border-radius:12px; " 
+            src=${src} 
+            width="70%" height="80" frameBorder="0" 
+            allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+     `;
+}
+
+
+
+
+
+
+
+
+
+
+
 // SONG LYRICS;
 let the_path = `
 
@@ -97,7 +206,6 @@ I just hope the sun will show us the path
 
 
 `;
-
 let solar_power = `
 
 I hate the winter, Can't stand the cold
@@ -144,7 +252,6 @@ solar power
 
 
 `;
-
 let california = `
 
 Once upon a time in Hollywood when Carole called my name
@@ -187,8 +294,6 @@ I wanna wake up, I wanna wake up
 
 
 `;
-
-
 let stoned_at = `
 
 Got a wishbone drying on the windowsill in my kitchen
@@ -395,7 +500,6 @@ Yeah, it must feel good being Mr. Start-Again
 
 
 `;
-
 let big_star = `
 
 Everyone knows that you're too good for me, don't they?
@@ -431,7 +535,6 @@ Wanna take your picture
 
 
 `;
-
 let leader_of = `
 
 Wearing SPF 3000 for the ultraviolet rays
@@ -446,8 +549,6 @@ We need the leader of a new regime
 
 
 `;
-
-
 let mood_ring = `
 
 I'm tryna blow bubbles, but inside
@@ -500,8 +601,7 @@ Take me to some kinda place (Anywhere)
 let oceanic_feeling = `
 
 
-It's a blue day
-We could jump Bulli
+It's a blue day     We could jump Bulli
 When I hit that water
 When it holds me
 I think about my father

@@ -13,11 +13,12 @@
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto;
+    grid-template-areas: "a b menu";
     text-align: center;
 }
 
 
-#contenedor :nth-child(1), #contenedor :nth-child(3) {
+#contenedor .a, #contenedor .c{
     background-image: url(../img/logo/Collage_Section_I_edit_newnew_01-1-scaled\ copy.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -31,6 +32,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: top center;
+    grid-area: b;
 }
 
 #contenedor img{
@@ -43,10 +45,9 @@
 }
 
 .menu{
+    grid-area: menu;
     color: #fff;
     font-size: 3em;
     text-align: center;
     margin: auto;
-    background-color: aqua;
-    height: 100%;
 }

@@ -10,7 +10,7 @@
     <title>SP | LYRICS</title>
 </head>
 
-<body onload="loadLyrics()">
+<body onload="loadLyrics()" class="solarpower_back">
 
     <div id="menu">
         <img src="img/logo/spp.png" title="THE SOLAR POWER PROJECT">
@@ -52,12 +52,14 @@
 
         </div>
         <div class="lyrics">
-            <pre id="song_lyric"></pre>
+        <span id="song_lyric"></span>
         </div>
-        <div class="menu" style="cursor: pointer;" title="Menu">
+        <div class="menu" style="cursor: pointer;;" title="Menu">
             <i onclick="openMenu()" class="fa-solid fa-ellipsis-vertical fa-beat"></i>
         </div>
 
+        <div id="spotify">
+        </div>
     </div>
 
     <script src="scripts/scripts_menu.js"></script>
