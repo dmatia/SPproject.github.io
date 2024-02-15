@@ -3,7 +3,7 @@ console.log('cargue');
 function loadLyrics(){
     loadLyric("the path");
     changeSpotify("the path");
-    songPalette("the_path");
+    songPalette("the path");
     const lis = document.querySelectorAll('#tracklist li');
     lis[0].classList.add('song_selected');
 }
@@ -181,7 +181,6 @@ function changeSpotify(song){
 
 // SONG LYRICS;
 let the_path = `
-
 Born in the year of OxyContin
 Raised in the tall grass
 Teen millionaire having nightmares from the camera flash
@@ -207,7 +206,6 @@ I just hope the sun will show us the path
 
 `;
 let solar_power = `
-
 I hate the winter, Can't stand the cold
 I tend to cancel all the plans(So sorry, I can't make it)
 But when the heat comes Something takes a hold
@@ -253,7 +251,6 @@ solar power
 
 `;
 let california = `
-
 Once upon a time in Hollywood when Carole called my name
 I stood up, the room exploded and I knew that's it, I'll never be the same
 That's when the doors swung open and a voice said, "We're glad you came"
@@ -295,7 +292,6 @@ I wanna wake up, I wanna wake up
 
 `;
 let stoned_at = `
-
 Got a wishbone drying on the windowsill in my kitchen
 Just in case I wake up and realise I've chosen wrong
 I love this life that I have, The vine hanging over the door
@@ -345,7 +341,6 @@ Maybe I'm just stoned at the nail salon again
 
 `;
 let fallen_fruit = `
-
 To the ones who came before us
 All the golden ones who were lifted on a wing
 We had no idea the dreams we had were far too big
@@ -373,7 +368,6 @@ Don't make me choose
 
 `;
 let secrets_from = `
-
 Dancing with my girls, only having two drinks then leaving
 It's a funny thing, thought you'd never gain self-control
 Guess it's been a while since you last said sorry
@@ -428,8 +422,6 @@ Cool...
 
 `;
 let the_man = `
-
-
 If I had to break it down, I'd say it's the way you love to dance
 Moving the furniture when my back is turned
 The flick of the lights and the world falls away
@@ -466,7 +458,6 @@ For you, baby
 
 `;
 let dominoes = `
-
 I heard that you were doing yoga With Uma Thurman's mother Just outside of Woodstock
 Now you're watering all the flowers You planted with your new girlfriend
 Outside on the rooftop
@@ -501,7 +492,6 @@ Yeah, it must feel good being Mr. Start-Again
 
 `;
 let big_star = `
-
 Everyone knows that you're too good for me, don't they?
 I'm a cheater, I lie, and I'm shy
 But you like to say hello to total strangers
@@ -536,7 +526,6 @@ Wanna take your picture
 
 `;
 let leader_of = `
-
 Wearing SPF 3000 for the ultraviolet rays
 Made it to the island on the last of the outbound planes 
 Got a trunk full of Simone and Céline, and of course, my magazines
@@ -550,7 +539,6 @@ We need the leader of a new regime
 
 `;
 let mood_ring = `
-
 I'm tryna blow bubbles, but inside
 Can't seem to fix my mood
 Today it's as dark as my roots
@@ -599,8 +587,6 @@ Take me to some kinda place (Anywhere)
 
 `;
 let oceanic_feeling = `
-
-
 It's a blue day     We could jump Bulli
 When I hit that water
 When it holds me
@@ -668,7 +654,6 @@ To take off my robes and step into the choir
 
 `;
 let helen_of = `
-
 You've heard it all before:
 One minute, I was killing 'em all
 And the next, a brown suit wouldn't let me perform ...Typical
@@ -716,7 +701,6 @@ Living in the modern world
 
 `;
 let hold_no = `
-
 Remember when we used to sing, baby, up in your room before your mother got home?
 There was a sound to our innocence
 Our voices were lovers in the same bed
