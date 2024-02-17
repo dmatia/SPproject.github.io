@@ -1,4 +1,5 @@
 @import url(fonts.css);
+@import url(menu.css);
 
 * {
     margin: 0;
@@ -6,21 +7,25 @@
     box-sizing: border-box;
 }
 
-
-html {
-    font-size: 10px;
+body {
+    background-image: url(../img/tour/large_image.jpg);
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    backdrop-filter: blur(5px);
 }
 
-#contenedor{
+#contenedor {
     display: grid;
-    grid-template-areas:"tour-home"
-                        "in-numbers"
-                        "tour-dates"
-                        "lorde-tour"
-                        "band-tour"
-                        "crew-tour"
-                        "tour-public"
-                        "tour-credits";
+    grid-template-areas: "tour-home"
+        "in-numbers"
+        "tour-dates"
+        "lorde-tour"
+        "band-tour"
+        "crew-tour"
+        "tour-public"
+        "tour-credits";
 }
 
 .tour-container {
@@ -53,7 +58,8 @@ html {
     background-size: 105%;
     background-attachment: fixed;
 }
-.section-01 div{
+
+.section-01 div {
     height: 100vh;
     background-image: url(../img/logo/logo-tour.png);
     background-position: center;
@@ -75,40 +81,44 @@ html {
     font-style: normal;
 }
 
-.section-02 div{
+.section-02 div {
     width: 80%;
-    margin-left: 2em ;
-    font-size: 4em;
+    margin-left: 2em;
 }
 
-.section-02 div p span{
+.section-02 div p span {
+    font-size: 3em;
     display: block;
 }
 
-.section-02 div p :first-child{
+.section-02 div p :first-child {
     padding-top: 1em;
     margin-left: 2em;
 }
 
-.section-02 div p :nth-child(2){
-    font-size: 1.3em;
+.section-02 div p :nth-child(2) {
+    font-size: 3em;
     margin-left: 3em;
 }
-.section-02 div p :nth-child(3){
-    font-size: 1.6em;
+
+.section-02 div p :nth-child(3) {
+    font-size: 4em;
     margin-left: 4em;
 }
-.section-02 div p :nth-child(4){
-    font-size: 1.9em;
+
+.section-02 div p :nth-child(4) {
+    font-size: 4em;
     margin-left: 5em;
 }
-.section-02 div p :nth-child(5){
-    font-size: 2.2em;
-    margin-left: 6em;
+
+.section-02 div p :nth-child(5) {
+    font-size: 5em;
+    margin-left: 5em;
 }
-.section-02 div p :last-child{
-    font-size: 3em;
-    margin-left: 2em;
+
+.section-02 div p :last-child {
+    font-size: 5.5em;
+    margin-left: 4em;
 }
 
 .section-02 div p ::selection {
@@ -145,23 +155,24 @@ html {
     justify-self: start;
 }
 
-.america p, 
-.oceania p, 
-.europe p{
+.america p,
+.oceania p,
+.europe p {
     font-family: ratiomodern, serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 
-th{
+th {
     text-align: left;
     text-transform: uppercase;
+    font-size: .9em;
 }
 
-td{
-    font-size: 1.2em;
+td {
+    font-size: .7em;
     padding-right: 5px;
 }
 
@@ -174,12 +185,13 @@ td{
     background-attachment: fixed;
     display: grid;
     align-content: end;
-    }
-.section-04 p{
+}
+
+.section-04 p {
     font-family: ratiomodern, serif;
     font-weight: 800;
     color: #fff;
-    font-size: 20em;
+    font-size: 15em;
     text-transform: capitalize;
 }
 
@@ -194,12 +206,13 @@ td{
     display: grid;
     justify-content: center;
     align-content: center;
-    }
-.section-05 p{
+}
+
+.section-05 p {
     font-family: ratiomodern, serif;
     font-weight: 800;
     color: #fff;
-    font-size: 20em;
+    font-size: 10em;
     text-transform: capitalize;
 }
 
@@ -213,12 +226,13 @@ td{
     display: grid;
     justify-content: center;
     align-content: start;
-    }
-.section-06 p{
+}
+
+.section-06 p {
     font-family: ratiomodern, serif;
     font-weight: 800;
     color: #fff;
-    font-size: 20em;
+    font-size: 10em;
     text-transform: capitalize;
 }
 
@@ -232,12 +246,13 @@ td{
     display: grid;
     justify-content: center;
     align-content: center;
-    }
-.section-07 p{
+}
+
+.section-07 p {
     font-family: ratiomodern, serif;
     font-weight: 800;
     color: #fff;
-    font-size: 20em;
+    font-size: 10em;
     text-transform: capitalize;
 }
 
@@ -251,11 +266,122 @@ td{
     display: grid;
     justify-content: center;
     align-content: center;
-    }
-.section-08 p{
+}
+
+.section-08 p {
     font-family: ratiomodern, serif;
     font-weight: 800;
     color: #fff;
-    font-size: 20em;
+    font-size: 10em;
     text-transform: capitalize;
+}
+
+.menu {
+    width: 30px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    color: #fff;
+    font-size: 3em;
+    z-index: 10;
+}
+
+@media (max-width: 480px) {
+
+    .section-01 div{
+        width: 100vw;
+    }
+    
+    .section-02 div {
+        width: 90vw;
+        margin-left: 0em;
+    }
+    
+    .section-02 div{
+        font-size: 2em;
+        display: block;
+    }
+    
+    .section-02 div p :first-child {
+        font-size: 1em;
+        padding-top: 0em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(2) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(3) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(4) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(5) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :last-child {
+        font-size: 2em;
+        margin-left: 0em;
+    }
+
+    body,
+    .section-01,
+    .section-02,
+    .section-03,
+    .section-04,
+    .section-05,
+    .section-06,
+    .section-07,
+    .section-08 {
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .section-03 {
+        grid-area: tour-dates;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "america"
+                            "oceania"
+                            "europe";
+        color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+    }
+    .section-03 p{
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .section-04{
+        background-position: left center;
+        background-position-x: 25%;
+    }
+    .section-05, .section-06{
+        background-color: #E0B140;
+        background-size: 120%;
+    }
+
+    .section-04 p,
+    .section-05 p,
+    .section-06 p,
+    .section-07 p,
+    .section-08 p {
+        font-size: 2em;
+    }
 }

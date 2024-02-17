@@ -5,13 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Fontawesome -->
+      <script src="https://kit.fontawesome.com/4eb81cd0f2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/tour.css">
 
-    <title>SOLAR POWER FOREVER</title>
+    <title>SP | TOUR</title>
 </head>
 
 <body>
+
+    <div id="menu">
+        <img src="img/logo/spp.png" title="THE SOLAR POWER PROJECT">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">the path</a></li>
+            <li><a href="lyrics.html">the lyrics</a></li>
+            <li><a href="tour.html">the solar power tour</a></li>
+            <li><a href="#">the critic acclaim</a></li>
+            <br>
+            <li><a href="#">about us</a></li>
+        </ul>
+        <i class="fa-regular fa-circle-xmark fa-2xl closeMenu" 
+        style="color: #ffffff; padding: 15px; cursor: pointer;" 
+        title="Close" onclick="closeMenu()"></i>
+        <p>dont't you think the early 2000s seem so far away...?</p>
+    </div>
+
+
     <div id="contenedor">
+
+        <div class="menu" style="cursor: pointer;;" title="Menu">
+            <i onclick="openMenu()" class="fa-solid fa-ellipsis-vertical fa-beat"></i>
+        </div>
+
         <div class="tour-container">
             <div class="snap-section section-01">
                 <div></div>
@@ -449,6 +475,9 @@
             </div>
     </div>
     </div>
+
+
+    <script src="scripts/scripts_menu.js"></script>
 </body>
 
 </html>
