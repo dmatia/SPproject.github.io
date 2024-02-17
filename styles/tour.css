@@ -385,3 +385,205 @@ td {
         font-size: 2em;
     }
 }
+
+@media (max-width: 768px) {
+
+    .section-01 div{
+        width: 100vw;
+    }
+    
+    .section-02 div {
+        width: 90vw;
+        margin-left: 0em;
+    }
+    
+    .section-02 div{
+        font-size: 2em;
+        display: block;
+    }
+    
+    .section-02 div p :first-child {
+        font-size: 1em;
+        padding-top: 0em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(2) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(3) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(4) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(5) {
+        font-size: 1em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :last-child {
+        font-size: 2em;
+        margin-left: 0em;
+    }
+
+    body,
+    .section-01,
+    .section-02,
+    .section-03,
+    .section-04,
+    .section-05,
+    .section-06,
+    .section-07,
+    .section-08 {
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .section-03 {
+        grid-area: tour-dates;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "america oceania europe";
+        color: #ffffff;
+        align-items: start;
+        gap: 1.5em;
+        background-attachment: fixed;
+    }
+    .section-03 p{
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .section-04{
+        background-position: left center;
+        background-position-x: 25%;
+    }
+    .section-05, .section-06{
+        background-color: #E0B140;
+        background-size: contain;
+        background-position: bottom;
+        align-content: space-evenly;
+        font-size: .7em;
+    }
+
+    .section-04 p,
+    .section-07 p,
+    .section-08 p {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .section-01 div{
+        width: 100vw;
+    }
+    
+    .section-02 div {
+        width: 90vw;
+        margin-left: 0em;
+    }
+    
+    .section-02 div{
+        font-size: 2em;
+        display: block;
+    }
+    
+    .section-02 div p :first-child {
+        font-size: 2em;
+        padding-top: 0em;
+        margin-left: 0em;
+    }
+    
+    .section-02 div p :nth-child(2) {
+        font-size: 2em;
+        margin-left: .5em;
+    }
+    
+    .section-02 div p :nth-child(3) {
+        font-size: 2em;
+        margin-left: 1em;
+    }
+    
+    .section-02 div p :nth-child(4) {
+        font-size: 2em;
+        margin-left: 1.5em;
+    }
+    
+    .section-02 div p :nth-child(5) {
+        font-size: 2em;
+        margin-left: 2em;
+    }
+    
+    .section-02 div p :last-child {
+        font-size: 3em;
+        margin-left: 0em;
+    }
+
+    body,
+    .section-01,
+    .section-02,
+    .section-03,
+    .section-04,
+    .section-05,
+    .section-06,
+    .section-07,
+    .section-08 {
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .section-03 {
+        grid-area: tour-dates;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "america oceania europe";
+        color: #ffffff;
+        align-items: start;
+        gap: 1.5em;
+        background-attachment: fixed;
+    }
+    .section-03 p{
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .section-04{
+        background-position: left center;
+        background-position-x: 25%;
+    }
+    .section-05, .section-06{
+        background-color: #E0B140;
+        background-size: contain;
+        background-position: center;
+        align-content: end;
+        font-size: 1em;
+    }
+
+    .section-06{
+        background-color: #E0B140;
+        background-size: contain;
+        background-position: center;
+        align-content: start;
+        font-size: 1em;
+    }
+
+    .section-04 p,
+    .section-07 p,
+    .section-08 p {
+        font-size: 8em;
+    }
+}
