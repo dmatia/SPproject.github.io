@@ -1,0 +1,88 @@
+@import url(fonts.css);
+@import url(menu.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/deco/POSTER.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#contenedor{
+    background-color: rgba(0,0,0, .7);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "CLASH NME NME INDEPENDENT"
+            "VARIETY LOGO LOGO PASTE"
+            "TIME LOGO LOGO ROLLING"
+            "ATLANTIC GUARDIAN GUARDIAN TIMES ";
+            width: 100vw;
+            height: 100vh;
+            align-content: center;
+}
+
+.acclaim-title{
+    grid-area: LOGO;
+    background-image: url(../img/logo/02_solar_power.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#contenedor :nth-child(2){
+    grid-area: NME;
+}
+#contenedor :nth-child(3){
+    grid-area: CLASH;
+}
+#contenedor :nth-child(4){
+    grid-area: INDEPENDENT;
+}
+#contenedor :nth-child(5){
+    grid-area: VARIETY;
+}
+#contenedor :nth-child(6){
+    grid-area: PASTE;
+}
+#contenedor :nth-child(7){
+    grid-area: TIME;
+}
+#contenedor :nth-child(8){
+    grid-area: ROLLING;
+}
+#contenedor :nth-child(9){
+    grid-area: ATLANTIC;
+}
+#contenedor :nth-child(10){
+    grid-area: GUARDIAN;
+}
+#contenedor :nth-child(11){
+    grid-area: TIMES;
+}
+
+#contenedor div{
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+#contenedor div blockquote{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+#contenedor div a{
+    text-decoration: none;
+    font-size: .8em;
+    text-align: right;
+    color: #fff;
+}

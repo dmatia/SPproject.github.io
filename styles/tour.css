@@ -121,7 +121,7 @@ body {
     margin-left: 4em;
 }
 
-.section-02 div p ::selection {
+*::selection {
     background-color: #E0B140;
 }
 
