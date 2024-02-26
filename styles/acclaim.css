@@ -1,3 +1,5 @@
+
+
 @import url(fonts.css);
 @import url(menu.css);
 
@@ -7,34 +9,68 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(../img/deco/POSTER.jpg);
+*::selection{
+    color: #333;
+    background-color: #E0B140;
+}
+
+/* body{
+    background-image: url(../img/deco/alt_back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
+} */
+
+
+body{
+background: rgb(255,165,0);
+background: radial-gradient(circle, rgba(255,165,0,1) 28%, rgb(255, 179, 39) 32%, rgb(255, 123, 0) 34%, #000 55%);
+}
+
+.contenedor{
+    height: 100vh;
 }
 
 #contenedor{
-    background-color: rgba(0,0,0, .7);
-    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "CLASH NME NME INDEPENDENT"
-            "VARIETY LOGO LOGO PASTE"
-            "TIME LOGO LOGO ROLLING"
-            "ATLANTIC GUARDIAN GUARDIAN TIMES ";
-            width: 100vw;
-            height: 100vh;
-            align-content: center;
+    grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr 30px;
+    grid-template-areas: "left NME NME CLASH PASTE PASTE menu"
+                         "left ATLANTIC LOGO LOGO LOGO  INDEPENDENT menu"
+                         "left TIME LOGO LOGO LOGO ROLLING menu" 
+                         "left GUARDIAN GUARDIAN VARIETY TIMES TIMES menu";
+    align-items: center;
 }
 
 .acclaim-title{
     grid-area: LOGO;
-    background-image: url(../img/logo/02_solar_power.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
 }
+
+.acclaim-title img:hover{
+    color: rgba(255, 255, 255, 0);
+    -webkit-mask:linear-gradient(-60deg,#ffffff 30%,rgba(255, 255, 255, .5),#ffffff 90%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 2s infinite;
+  }
+
+  
+  @keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }
+
+
+.acclaim-title img{
+    margin: auto;
+    width: 80%;
+    
+}
+
+/* .acclaim-title img:hover{
+    width: 90%;
+    -webkit-filter: drop-shadow(-5px 5px 2px #ffffff);
+    filter: drop-shadow(-0px 0px 10px #fff);
+} */
 
 #contenedor :nth-child(2){
     grid-area: NME;
@@ -42,12 +78,14 @@ body{
 #contenedor :nth-child(3){
     grid-area: CLASH;
 }
+
 #contenedor :nth-child(4){
     grid-area: INDEPENDENT;
 }
 #contenedor :nth-child(5){
     grid-area: VARIETY;
 }
+
 #contenedor :nth-child(6){
     grid-area: PASTE;
 }
@@ -68,7 +106,6 @@ body{
 }
 
 #contenedor div{
-    padding: 1em;
     text-transform: uppercase;
     font-family: Oswald;
 }
@@ -76,13 +113,50 @@ body{
 #contenedor div blockquote{
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    font-size: 1.3em;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
 }
 
-#contenedor div a{
-    text-decoration: none;
-    font-size: .8em;
-    text-align: right;
+#contenedor div a img{
+    height: 2em;
+    padding-top: 5px;
+}
+
+
+#contenedor :nth-child(8) a img{
+    filter:  brightness(10);
+    width: 150px;
+    height: auto;
+    margin-top: -20px;
+}
+
+#contenedor :nth-child(7) a img{
+    filter: brightness(900);
+}
+#contenedor :nth-child(4) a img{
+    filter: invert();
+    width: 200px;
+    height: auto;
+    margin-top: -40px;
+}
+
+#contenedor :nth-child(5) a img, 
+#contenedor :nth-child(3) a img, 
+#contenedor :nth-child(2) a img, 
+#contenedor :nth-child(6) a img,
+#contenedor :nth-child(9) a img, 
+#contenedor :nth-child(10) a img, 
+#contenedor :nth-child(11) a img{
+    filter: brightness(0);
+    filter: invert();
+}
+
+.menu{
+    grid-area: menu;
     color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
 }
