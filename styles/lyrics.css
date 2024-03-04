@@ -138,6 +138,7 @@ body {
         grid-template-areas: "tracklist_title tracklist_title tracklist_title"
             "tracklist lyrics menu"
             "spotify spotify spotify";
+            font-size: 10px;
     }
 
     .tracklist_title {
@@ -154,12 +155,12 @@ body {
         grid-area: tracklist;
         color: #fff;
         font-family: "puffin-display-soft", sans-serif;
-        font-weight: 100;
+        font-weight: 50;
         font-style: normal;
         text-transform: uppercase;
         overflow: scroll;
         text-align: right;
-        font-size: .7em;
+        font-size: 10px !important;
     }
 
     .song_selected {
@@ -177,13 +178,12 @@ body {
     }
 
     .lyrics span {
-        font-size: .7em;
+        font-size: 10px !important;
         letter-spacing: 0;
         color: white;
         word-spacing: 0;
-        line-break: looses;
+        line-break: normal;
         line-height: 1em;
-        
     }
     
     .lyrics {
