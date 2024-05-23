@@ -1,0 +1,70 @@
+@import url(normalice.css);
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #000;
+    }
+    video{
+    min-height: 100vh;
+    position: fixed;
+    z-index: -100;
+    opacity: .5;
+   }
+   header{
+    text-align: right;
+    padding: .5em 1em 0 0;
+    height: 25vh;
+   }
+
+   .menu-icon{
+    color: #fff;
+    font-size: 4em;
+    text-align: right;
+   }
+
+   main{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+   }
+
+   .title_logo{
+    width: 90vw;
+    background-image: url(../assets/images/spp_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   }
+
+   footer{
+    height: 25vh;
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: red;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: blueviolet;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: brown;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   video{
+    display: none;
+   }
+}
